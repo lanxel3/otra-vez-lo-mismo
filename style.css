@@ -82,3 +82,26 @@ button:hover {
     color: gray;
     cursor: not-allowed;
 }
+#progreso-container {
+    margin: 20px;
+}
+
+#progreso-texto {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#barra-progreso {
+    width: 100%;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#barra {
+    height: 100%;
+    width: 0%;
+    background-color: #007BFF;
+    transition: width 0.3s;
+}
