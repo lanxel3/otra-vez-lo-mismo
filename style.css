@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+button {
+    background-color: #fff;
+    color: #007BFF;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #e6e6e6;
+}
+
+.año {
+    margin: 20px;
+    padding: 15px;
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+}
+
+.año h2 {
+    color: #007BFF;
+}
+
+.cuatri {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.asignatura {
+    border: 1px solid #007BFF;
+    padding: 8px;
+    margin: 5px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.asignatura.completada {
+    background-color: #B3E5FC;
+}
+
+.asignatura.bloqueada {
+    background-color: #f0f0f0;
+    color: gray;
+    cursor: not-allowed;
+}
