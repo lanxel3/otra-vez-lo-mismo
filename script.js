@@ -206,8 +206,20 @@ function actualizarProgreso() {
     document.getElementById("progreso-texto").textContent =
         `Progreso: ${completados} / ${total} créditos`;
 
-    document.getElementById("barra").style.width = `${porcentaje}%`;
+    const barra = document.getElementById("barra");
+    barra.style.width = `${porcentaje}%`;
+
+    // Quitamos clases de color previas
+    barra.classList.remove("verde", "amarillo");
+
+    // Cambiamos color según porcentaje
+    if (porcentaje >= 100) {
+        barra.classList.add("verde");
+    } else if (porcentaje >= 50) {
+        barra.classList.add("amarillo");
+    }
 }
+
 
 document.getElementById("resetBtn").addEventListener("click", () => {
     localStorage.clear();
