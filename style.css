@@ -1,63 +1,78 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: white;
-    color: #333;
-    text-align: center;
-    padding: 20px;
+    background-color: #ffffff;
+    margin: 20px;
+    color: #000;
 }
 
-#progreso-container {
+h1 {
+    color: #0056b3;
+    text-align: center;
+}
+
+#barra-container {
     width: 100%;
-    height: 30px;
     background-color: #e0e0e0;
     border-radius: 5px;
+    height: 25px;
     overflow: hidden;
-    margin: 20px auto;
+    margin-bottom: 10px;
 }
 
 #barra {
     height: 100%;
     width: 0%;
-    background-color: #007BFF;
+    background-color: #007BFF; /* Azul por defecto */
     transition: width 0.3s, background-color 0.3s;
 }
 
 #barra.verde {
-    background-color: #28a745;
+    background-color: #28a745; /* Verde */
 }
 
 #barra.amarillo {
-    background-color: #ffc107;
+    background-color: #ffc107; /* Amarillo */
 }
 
-.año {
-    border: 1px solid #007BFF;
+.curso {
+    border: 2px solid #0056b3;
     border-radius: 5px;
-    margin: 20px 0;
     padding: 10px;
+    margin-bottom: 20px;
     background-color: #f0f8ff;
 }
 
 .asignatura {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin: 5px 0;
+    margin-bottom: 5px;
 }
 
 .asignatura span {
     flex: 1;
-    text-align: left;
-    margin-left: 10px;
+    margin-left: 8px;
 }
 
 .nota-asignatura {
     width: 60px;
-    padding: 3px;
-    text-align: center;
+    margin-left: 10px;
 }
 
 .media-curso {
     font-weight: bold;
     margin-top: 10px;
+    text-align: right;
+}
+
+#reset {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#reset:hover {
+    background-color: #cc0000;
 }
