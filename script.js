@@ -1,218 +1,201 @@
+// Datos de asignaturas (por año y semestre con créditos)
 const malla = [
     {
         año: 1,
-        semestres: [
-            {
-                nombre: "Primer semestre",
-                asignaturas: [
-                    { nombre: "Fundamentos de Matemáticas", creditos: 6 },
-                    { nombre: "Álgebra", creditos: 6 },
-                    { nombre: "Matemática Discreta", creditos: 6 },
-                    { nombre: "Sistemas Digitales", creditos: 6 },
-                    { nombre: "Programación I", creditos: 6 }
-                ]
-            },
-            {
-                nombre: "Segundo semestre",
-                asignaturas: [
-                    { nombre: "Fundamentos Tecnológicos y Físicos de la Informática", creditos: 6 },
-                    { nombre: "Estadística", creditos: 6 },
-                    { nombre: "Fundamentos de Computadores", creditos: 6 },
-                    { nombre: "Programación II", creditos: 6 },
-                    { nombre: "Cálculo y Análisis Numérico", creditos: 6 }
-                ]
-            }
+        asignaturas: [
+            { nombre: "Fundamentos de Matemáticas", creditos: 6 },
+            { nombre: "Álgebra", creditos: 6 },
+            { nombre: "Matemática Discreta", creditos: 6 },
+            { nombre: "Sistemas Digitales", creditos: 6 },
+            { nombre: "Programación I", creditos: 6 },
+            { nombre: "Fundamentos Tecnológicos y Físicos de la Informática", creditos: 6 },
+            { nombre: "Estadística", creditos: 6 },
+            { nombre: "Fundamentos de Computadores", creditos: 6 },
+            { nombre: "Programación II", creditos: 6 },
+            { nombre: "Cálculo y Análisis Numérico", creditos: 6 }
         ]
     },
     {
         año: 2,
-        semestres: [
-            {
-                nombre: "Primer semestre",
-                asignaturas: [
-                    { nombre: "Bases de Datos I", creditos: 6 },
-                    { nombre: "Algoritmos y Estructuras de Datos", creditos: 6 },
-                    { nombre: "Sistemas Operativos I", creditos: 6 },
-                    { nombre: "Redes", creditos: 6 },
-                    { nombre: "Programación Orientada a Objetos", creditos: 6 }
-                ]
-            },
-            {
-                nombre: "Segundo semestre",
-                asignaturas: [
-                    { nombre: "Gestión Financiera de Empresas", creditos: 6 },
-                    { nombre: "Bases de Datos II", creditos: 4.5 },
-                    { nombre: "Sistemas Operativos II", creditos: 4.5 },
-                    { nombre: "Arquitectura de Computadores", creditos: 4.5 },
-                    { nombre: "Computación Gráfica", creditos: 4.5 },
-                    { nombre: "Diseño de Software", creditos: 6 }
-                ]
-            }
+        asignaturas: [
+            { nombre: "Gestión Financiera de Empresas", creditos: 6 },
+            { nombre: "Bases de Datos I", creditos: 6 },
+            { nombre: "Algoritmos y Estructuras de Datos", creditos: 6 },
+            { nombre: "Sistemas Operativos I", creditos: 6 },
+            { nombre: "Redes", creditos: 6 },
+            { nombre: "Programación Orientada a Objetos", creditos: 6 },
+            { nombre: "Bases de Datos II", creditos: 4.5 },
+            { nombre: "Sistemas Operativos II", creditos: 4.5 },
+            { nombre: "Arquitectura de Computadores", creditos: 4.5 },
+            { nombre: "Computación Gráfica", creditos: 4.5 },
+            { nombre: "Diseño de Software", creditos: 6 }
         ]
     },
     {
         año: 3,
-        semestres: [
-            {
-                nombre: "Primer semestre",
-                asignaturas: [
-                    { nombre: "Teoría de Autómatas y Lenguajes Formales", creditos: 6 },
-                    { nombre: "Administración de Sistemas y Redes", creditos: 6 },
-                    { nombre: "Computación Distribuida", creditos: 6 },
-                    { nombre: "Inteligencia Artificial", creditos: 6 }
-                ]
-            },
-            {
-                nombre: "Segundo semestre",
-                asignaturas: [
-                    { nombre: "Desarrollo de Aplicaciones Web", creditos: 6 },
-                    { nombre: "Gestión de Proyectos Informáticos", creditos: 4.5 },
-                    { nombre: "Compiladores e Intérpretes", creditos: 4.5 },
-                    { nombre: "Seguridad de la Información", creditos: 4.5 },
-                    { nombre: "Ciberseguridad", creditos: 4.5 }
-                ]
-            }
+        asignaturas: [
+            { nombre: "Teoría de Autómatas y Lenguajes Formales", creditos: 6 },
+            { nombre: "Administración de Sistemas y Redes", creditos: 6 },
+            { nombre: "Desarrollo de Aplicaciones Web", creditos: 6 },
+            { nombre: "Gestión de Proyectos Informáticos", creditos: 4.5 },
+            { nombre: "Ingeniería del Software", creditos: 12 },
+            { nombre: "Computación Distribuida", creditos: 6 },
+            { nombre: "Compiladores e Intérpretes", creditos: 4.5 },
+            { nombre: "Inteligencia Artificial", creditos: 6 },
+            { nombre: "Seguridad de la Información", creditos: 4.5 },
+            { nombre: "Ciberseguridad", creditos: 4.5 }
         ]
     },
     {
         año: 4,
-        semestres: [
-            {
-                nombre: "Primer semestre",
-                asignaturas: [
-                    { nombre: "Interacción Persona-Ordenador", creditos: 6 },
-                    { nombre: "Ingeniería de Computadores", creditos: 6 },
-                    { nombre: "Trabajo Fin de Grado", creditos: 12 },
-                    { nombre: "Prácticas Externas", creditos: 9 }
-                ]
-            },
-            {
-                nombre: "Optativas",
-                asignaturas: [
-                    { nombre: "Fundamentos de Sistemas Paralelos", creditos: 4.5 },
-                    { nombre: "Visualización Avanzada", creditos: 4.5 },
-                    { nombre: "Calidad de los Sistemas de Información", creditos: 4.5 },
-                    { nombre: "Almacenes y Minería de Datos", creditos: 4.5 },
-                    { nombre: "Conocimiento y Razonamiento Automático", creditos: 4.5 },
-                    { nombre: "Sistemas Inteligentes", creditos: 4.5 },
-                    { nombre: "Diseño y Administración de Redes", creditos: 4.5 },
-                    { nombre: "Ingeniería de Servicios", creditos: 4.5 },
-                    { nombre: "Computación en la Nube", creditos: 4.5 },
-                    { nombre: "Computación Ubicua", creditos: 4.5 },
-                    { nombre: "Programación de Arquitecturas Emergentes", creditos: 4.5 },
-                    { nombre: "Gestión de Información no estructurada", creditos: 4.5 },
-                    { nombre: "Modelos y Técnicas de Optimización", creditos: 4.5 },
-                    { nombre: "Aprendizaje Automático", creditos: 4.5 }
-                ]
-            }
+        asignaturas: [
+            { nombre: "Interacción Persona-Ordenador", creditos: 6 },
+            { nombre: "Ingeniería de Computadores", creditos: 6 },
+            { nombre: "Trabajo Fin de Grado", creditos: 12 },
+            { nombre: "Prácticas Externas", creditos: 9 },
+            { nombre: "Fundamentos de Sistemas Paralelos", creditos: 4.5 },
+            { nombre: "Visualización Avanzada", creditos: 4.5 },
+            { nombre: "Calidad de los Sistemas de Información", creditos: 4.5 },
+            { nombre: "Almacenes y Minería de Datos", creditos: 4.5 },
+            { nombre: "Conocimiento y Razonamiento Automático", creditos: 4.5 },
+            { nombre: "Sistemas Inteligentes", creditos: 4.5 },
+            { nombre: "Diseño y Administración de Redes", creditos: 4.5 },
+            { nombre: "Ingeniería de Servicios", creditos: 4.5 },
+            { nombre: "Computación en la Nube", creditos: 4.5 },
+            { nombre: "Computación Ubicua", creditos: 4.5 },
+            { nombre: "Programación de Arquitecturas Emergentes", creditos: 4.5 },
+            { nombre: "Gestión de Información no estructurada", creditos: 4.5 },
+            { nombre: "Modelos y Técnicas de Optimización", creditos: 4.5 },
+            { nombre: "Aprendizaje Automático", creditos: 4.5 }
         ]
     }
 ];
 
-let progreso = JSON.parse(localStorage.getItem("progreso")) || {};
+// Generar HTML de malla
+const contenedor = document.getElementById("contenedor-malla");
 
-function renderMalla() {
-    const contenedor = document.getElementById("malla");
-    contenedor.innerHTML = "";
+malla.forEach(curso => {
+    const divCurso = document.createElement("div");
+    divCurso.classList.add("curso");
+    divCurso.id = `año-${curso.año}`;
 
-    malla.forEach(añoData => {
-        const añoDiv = document.createElement("div");
-        añoDiv.classList.add("año");
+    const titulo = document.createElement("h2");
+    titulo.textContent = `Año ${curso.año}`;
+    divCurso.appendChild(titulo);
 
-        const tituloAño = document.createElement("h2");
-        tituloAño.textContent = `Año ${añoData.año}`;
-        añoDiv.appendChild(tituloAño);
+    curso.asignaturas.forEach(asig => {
+        const divAsig = document.createElement("div");
+        divAsig.classList.add("asignatura");
 
-        const semestresDiv = document.createElement("div");
-        semestresDiv.classList.add("semestres");
+        const check = document.createElement("input");
+        check.type = "checkbox";
+        check.classList.add("check-asignatura");
+        check.dataset.creditos = asig.creditos;
 
-        añoData.semestres.forEach(semestre => {
-            const cuatriDiv = document.createElement("div");
-            cuatriDiv.classList.add("cuatri");
+        const nombre = document.createElement("span");
+        nombre.textContent = asig.nombre;
 
-            const tituloCuatri = document.createElement("h3");
-            tituloCuatri.textContent = semestre.nombre;
-            cuatriDiv.appendChild(tituloCuatri);
+        const nota = document.createElement("input");
+        nota.type = "number";
+        nota.classList.add("nota-asignatura");
+        nota.min = 0;
+        nota.max = 10;
+        nota.step = 0.1;
+        nota.placeholder = "Nota";
 
-            semestre.asignaturas.forEach(asignatura => {
-                const asigDiv = document.createElement("div");
-                asigDiv.classList.add("asignatura");
-                asigDiv.textContent = `${asignatura.nombre} (${asignatura.creditos} créditos)`;
+        divAsig.appendChild(check);
+        divAsig.appendChild(nombre);
+        divAsig.appendChild(nota);
 
-                const id = `${añoData.año}-${asignatura.nombre}`;
-
-                if (progreso[id]) {
-                    asigDiv.classList.add("completada");
-                }
-
-                if (!puedeMarcar(añoData.año)) {
-                    asigDiv.classList.add("bloqueada");
-                }
-
-                asigDiv.addEventListener("click", () => {
-                    if (asigDiv.classList.contains("bloqueada")) return;
-
-                    asigDiv.classList.toggle("completada");
-                    progreso[id] = asigDiv.classList.contains("completada");
-                    localStorage.setItem("progreso", JSON.stringify(progreso));
-                    actualizarProgreso();
-                    renderMalla();
-                });
-
-                cuatriDiv.appendChild(asigDiv);
-            });
-
-            semestresDiv.appendChild(cuatriDiv);
-        });
-
-        añoDiv.appendChild(semestresDiv);
-        contenedor.appendChild(añoDiv);
+        divCurso.appendChild(divAsig);
     });
+
+    const media = document.createElement("div");
+    media.classList.add("media-curso");
+    media.id = `media-año-${curso.año}`;
+    media.textContent = "Media: -";
+    divCurso.appendChild(media);
+
+    contenedor.appendChild(divCurso);
+});
+
+// Cargar datos guardados
+function cargarDatos() {
+    const completadas = JSON.parse(localStorage.getItem("asignaturasCompletadas")) || [];
+    const notas = JSON.parse(localStorage.getItem("asignaturasNotas")) || {};
+
+    document.querySelectorAll(".check-asignatura").forEach(chk => {
+        if (completadas.includes(chk.nextElementSibling.textContent.trim())) {
+            chk.checked = true;
+        }
+    });
+
+    document.querySelectorAll(".nota-asignatura").forEach(input => {
+        const nombre = input.previousElementSibling.textContent.trim();
+        if (notas[nombre]) {
+            input.value = notas[nombre];
+        }
+    });
+
+    actualizarProgreso();
+    actualizarMedias();
+}
+cargarDatos();
+
+// Eventos
+document.addEventListener("change", e => {
+    if (e.target.classList.contains("check-asignatura")) {
+        guardarCompletadas();
+        actualizarProgreso();
+    }
+});
+
+document.addEventListener("input", e => {
+    if (e.target.classList.contains("nota-asignatura")) {
+        guardarNotas();
+        actualizarMedias();
+    }
+});
+
+// Guardar completadas
+function guardarCompletadas() {
+    const completadas = [];
+    document.querySelectorAll(".check-asignatura:checked").forEach(chk => {
+        completadas.push(chk.nextElementSibling.textContent.trim());
+    });
+    localStorage.setItem("asignaturasCompletadas", JSON.stringify(completadas));
 }
 
-function puedeMarcar(año) {
-    if (año === 1) return true;
-    const añoAnterior = malla.find(a => a.año === año - 1);
-    return añoAnterior.semestres.every(sem =>
-        sem.asignaturas.every(asig =>
-            progreso[`${año - 1}-${asig.nombre}`]
-        )
-    );
+// Guardar notas
+function guardarNotas() {
+    const notas = {};
+    document.querySelectorAll(".nota-asignatura").forEach(input => {
+        const nombre = input.previousElementSibling.textContent.trim();
+        if (input.value) {
+            notas[nombre] = input.value;
+        }
+    });
+    localStorage.setItem("asignaturasNotas", JSON.stringify(notas));
 }
 
-function calcularTotalCreditos() {
-    return malla.reduce((total, año) =>
-        total + año.semestres.reduce((sum, sem) =>
-            sum + sem.asignaturas.reduce((s, asig) => s + asig.creditos, 0), 0
-        ), 0
-    );
-}
-
-function calcularCreditosCompletados() {
-    return malla.reduce((total, año) =>
-        total + año.semestres.reduce((sum, sem) =>
-            sum + sem.asignaturas.reduce((s, asig) =>
-                s + (progreso[`${año.año}-${asig.nombre}`] ? asig.creditos : 0), 0
-            ), 0
-        ), 0
-    );
-}
-
+// Actualizar progreso
 function actualizarProgreso() {
-    const total = 240; // Total fijo de créditos
-    const completados = calcularCreditosCompletados();
-    const porcentaje = (completados / total) * 100;
+    const total = 240;
+    let completados = 0;
+
+    document.querySelectorAll(".check-asignatura:checked").forEach(chk => {
+        completados += parseFloat(chk.dataset.creditos);
+    });
+
+    const porcentaje = Math.min((completados / total) * 100, 100);
 
     document.getElementById("progreso-texto").textContent =
         `Progreso: ${completados} / ${total} créditos`;
 
     const barra = document.getElementById("barra");
     barra.style.width = `${porcentaje}%`;
-
-    // Quitamos clases de color previas
     barra.classList.remove("verde", "amarillo");
 
-    // Cambiamos color según porcentaje
     if (porcentaje >= 100) {
         barra.classList.add("verde");
     } else if (porcentaje >= 50) {
@@ -220,14 +203,31 @@ function actualizarProgreso() {
     }
 }
 
+// Actualizar medias
+function actualizarMedias() {
+    for (let año = 1; año <= 4; año++) {
+        const asignaturas = document.querySelectorAll(`#año-${año} .nota-asignatura`);
+        let suma = 0, contador = 0;
 
+        asignaturas.forEach(input => {
+            const nota = parseFloat(input.value);
+            if (!isNaN(nota)) {
+                suma += nota;
+                contador++;
+            }
+        });
 
-document.getElementById("resetBtn").addEventListener("click", () => {
-    localStorage.clear();
-    progreso = {};
+        const media = contador > 0 ? (suma / contador).toFixed(2) : "-";
+        document.getElementById(`media-año-${año}`).textContent = `Media: ${media}`;
+    }
+}
+
+// Botón reset
+document.getElementById("reset").addEventListener("click", () => {
+    localStorage.removeItem("asignaturasCompletadas");
+    localStorage.removeItem("asignaturasNotas");
+    document.querySelectorAll(".check-asignatura").forEach(chk => chk.checked = false);
+    document.querySelectorAll(".nota-asignatura").forEach(input => input.value = "");
     actualizarProgreso();
-    renderMalla();
+    actualizarMedias();
 });
-
-renderMalla();
-actualizarProgreso();
