@@ -1,6 +1,3 @@
-// ---------------------
-// Datos de la malla
-// ---------------------
 const malla = [
     {
         año: 1,
@@ -112,25 +109,22 @@ const malla = [
     }
 ];
 
-// ---------------------
-// Variables
-// ---------------------
 let progreso = JSON.parse(localStorage.getItem("progreso")) || {};
 
-// ---------------------
-// Renderizado
-// ---------------------
 function renderMalla() {
     const contenedor = document.getElementById("malla");
     contenedor.innerHTML = "";
 
-    malla.forEach((añoData, index) => {
+    malla.forEach(añoData => {
         const añoDiv = document.createElement("div");
         añoDiv.classList.add("año");
 
         const tituloAño = document.createElement("h2");
         tituloAño.textContent = `Año ${añoData.año}`;
         añoDiv.appendChild(tituloAño);
+
+        const semestresDiv = document.createElement("div");
+        semestresDiv.classList.add("semestres");
 
         añoData.semestres.forEach(semestre => {
             const cuatriDiv = document.createElement("div");
@@ -145,42 +139,36 @@ function renderMalla() {
                 asigDiv.classList.add("asignatura");
                 asigDiv.textContent = asignatura;
 
-                // ID único para guardar en localStorage
                 const id = `${añoData.año}-${asignatura}`;
-                
-                // Estado de la asignatura
+
                 if (progreso[id]) {
                     asigDiv.classList.add("completada");
                 }
 
-                // Bloqueo de años posteriores
                 if (!puedeMarcar(añoData.año)) {
                     asigDiv.classList.add("bloqueada");
                 }
 
-                // Evento de clic
                 asigDiv.addEventListener("click", () => {
                     if (asigDiv.classList.contains("bloqueada")) return;
 
                     asigDiv.classList.toggle("completada");
                     progreso[id] = asigDiv.classList.contains("completada");
                     localStorage.setItem("progreso", JSON.stringify(progreso));
-                    renderMalla(); // refrescar para aplicar bloqueos
+                    renderMalla();
                 });
 
                 cuatriDiv.appendChild(asigDiv);
             });
 
-            añoDiv.appendChild(cuatriDiv);
+            semestresDiv.appendChild(cuatriDiv);
         });
 
+        añoDiv.appendChild(semestresDiv);
         contenedor.appendChild(añoDiv);
     });
 }
 
-// ---------------------
-// Función para bloqueo
-// ---------------------
 function puedeMarcar(año) {
     if (año === 1) return true;
     const añoAnterior = malla.find(a => a.año === año - 1);
@@ -191,16 +179,11 @@ function puedeMarcar(año) {
     );
 }
 
-// ---------------------
-// Botón de reset
-// ---------------------
 document.getElementById("resetBtn").addEventListener("click", () => {
     localStorage.clear();
     progreso = {};
     renderMalla();
 });
 
-// ---------------------
-// Inicializar
-// ---------------------
 renderMalla();
+
