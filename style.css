@@ -102,6 +102,14 @@ button:hover {
 #barra {
     height: 100%;
     width: 0%;
-    background-color: #007BFF;
-    transition: width 0.3s;
+    background-color: #007BFF; /* Azul por defecto */
+    transition: width 0.3s, background-color 0.3s;
+}
+
+#barra.verde {
+    background-color: #28a745; /* Verde */
+}
+
+#barra.amarillo {
+    background-color: #ffc107; /* Amarillo */
 }
