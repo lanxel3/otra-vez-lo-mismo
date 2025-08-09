@@ -5,21 +5,21 @@ const malla = [
             {
                 nombre: "Primer semestre",
                 asignaturas: [
-                    "Fundamentos de Matemáticas",
-                    "Álgebra",
-                    "Matemática Discreta",
-                    "Sistemas Digitales",
-                    "Programación I"
+                    { nombre: "Fundamentos de Matemáticas", creditos: 6 },
+                    { nombre: "Álgebra", creditos: 6 },
+                    { nombre: "Matemática Discreta", creditos: 6 },
+                    { nombre: "Sistemas Digitales", creditos: 6 },
+                    { nombre: "Programación I", creditos: 6 }
                 ]
             },
             {
                 nombre: "Segundo semestre",
                 asignaturas: [
-                    "Fundamentos Tecnológicos y Físicos de la Informática",
-                    "Estadística",
-                    "Fundamentos de Computadores",
-                    "Programación II",
-                    "Cálculo y Análisis Numérico"
+                    { nombre: "Fundamentos Tecnológicos y Físicos de la Informática", creditos: 6 },
+                    { nombre: "Estadística", creditos: 6 },
+                    { nombre: "Fundamentos de Computadores", creditos: 6 },
+                    { nombre: "Programación II", creditos: 6 },
+                    { nombre: "Cálculo y Análisis Numérico", creditos: 6 }
                 ]
             }
         ]
@@ -30,22 +30,22 @@ const malla = [
             {
                 nombre: "Primer semestre",
                 asignaturas: [
-                    "Bases de Datos I",
-                    "Algoritmos y Estructuras de Datos",
-                    "Sistemas Operativos I",
-                    "Redes",
-                    "Programación Orientada a Objetos"
+                    { nombre: "Bases de Datos I", creditos: 6 },
+                    { nombre: "Algoritmos y Estructuras de Datos", creditos: 6 },
+                    { nombre: "Sistemas Operativos I", creditos: 6 },
+                    { nombre: "Redes", creditos: 6 },
+                    { nombre: "Programación Orientada a Objetos", creditos: 6 }
                 ]
             },
             {
                 nombre: "Segundo semestre",
                 asignaturas: [
-                    "Gestión Financiera de Empresas",
-                    "Bases de Datos II",
-                    "Sistemas Operativos II",
-                    "Arquitectura de Computadores",
-                    "Computación Gráfica",
-                    "Diseño de Software"
+                    { nombre: "Gestión Financiera de Empresas", creditos: 6 },
+                    { nombre: "Bases de Datos II", creditos: 4.5 },
+                    { nombre: "Sistemas Operativos II", creditos: 4.5 },
+                    { nombre: "Arquitectura de Computadores", creditos: 4.5 },
+                    { nombre: "Computación Gráfica", creditos: 4.5 },
+                    { nombre: "Diseño de Software", creditos: 6 }
                 ]
             }
         ]
@@ -56,20 +56,20 @@ const malla = [
             {
                 nombre: "Primer semestre",
                 asignaturas: [
-                    "Teoría de Autómatas y Lenguajes Formales",
-                    "Administración de Sistemas y Redes",
-                    "Computación Distribuida",
-                    "Inteligencia Artificial"
+                    { nombre: "Teoría de Autómatas y Lenguajes Formales", creditos: 6 },
+                    { nombre: "Administración de Sistemas y Redes", creditos: 6 },
+                    { nombre: "Computación Distribuida", creditos: 6 },
+                    { nombre: "Inteligencia Artificial", creditos: 6 }
                 ]
             },
             {
                 nombre: "Segundo semestre",
                 asignaturas: [
-                    "Desarrollo de Aplicaciones Web",
-                    "Gestión de Proyectos Informáticos",
-                    "Compiladores e Intérpretes",
-                    "Seguridad de la Información",
-                    "Ciberseguridad"
+                    { nombre: "Desarrollo de Aplicaciones Web", creditos: 6 },
+                    { nombre: "Gestión de Proyectos Informáticos", creditos: 4.5 },
+                    { nombre: "Compiladores e Intérpretes", creditos: 4.5 },
+                    { nombre: "Seguridad de la Información", creditos: 4.5 },
+                    { nombre: "Ciberseguridad", creditos: 4.5 }
                 ]
             }
         ]
@@ -80,29 +80,29 @@ const malla = [
             {
                 nombre: "Primer semestre",
                 asignaturas: [
-                    "Interacción Persona-Ordenador",
-                    "Ingeniería de Computadores",
-                    "Trabajo Fin de Grado",
-                    "Prácticas Externas"
+                    { nombre: "Interacción Persona-Ordenador", creditos: 6 },
+                    { nombre: "Ingeniería de Computadores", creditos: 6 },
+                    { nombre: "Trabajo Fin de Grado", creditos: 12 },
+                    { nombre: "Prácticas Externas", creditos: 9 }
                 ]
             },
             {
                 nombre: "Optativas",
                 asignaturas: [
-                    "Fundamentos de Sistemas Paralelos",
-                    "Visualización Avanzada",
-                    "Calidad de los Sistemas de Información",
-                    "Almacenes y Minería de Datos",
-                    "Conocimiento y Razonamiento Automático",
-                    "Sistemas Inteligentes",
-                    "Diseño y Administración de Redes",
-                    "Ingeniería de Servicios",
-                    "Computación en la Nube",
-                    "Computación Ubicua",
-                    "Programación de Arquitecturas Emergentes",
-                    "Gestión de Información no estructurada",
-                    "Modelos y Técnicas de Optimización",
-                    "Aprendizaje Automático"
+                    { nombre: "Fundamentos de Sistemas Paralelos", creditos: 4.5 },
+                    { nombre: "Visualización Avanzada", creditos: 4.5 },
+                    { nombre: "Calidad de los Sistemas de Información", creditos: 4.5 },
+                    { nombre: "Almacenes y Minería de Datos", creditos: 4.5 },
+                    { nombre: "Conocimiento y Razonamiento Automático", creditos: 4.5 },
+                    { nombre: "Sistemas Inteligentes", creditos: 4.5 },
+                    { nombre: "Diseño y Administración de Redes", creditos: 4.5 },
+                    { nombre: "Ingeniería de Servicios", creditos: 4.5 },
+                    { nombre: "Computación en la Nube", creditos: 4.5 },
+                    { nombre: "Computación Ubicua", creditos: 4.5 },
+                    { nombre: "Programación de Arquitecturas Emergentes", creditos: 4.5 },
+                    { nombre: "Gestión de Información no estructurada", creditos: 4.5 },
+                    { nombre: "Modelos y Técnicas de Optimización", creditos: 4.5 },
+                    { nombre: "Aprendizaje Automático", creditos: 4.5 }
                 ]
             }
         ]
@@ -137,9 +137,9 @@ function renderMalla() {
             semestre.asignaturas.forEach(asignatura => {
                 const asigDiv = document.createElement("div");
                 asigDiv.classList.add("asignatura");
-                asigDiv.textContent = asignatura;
+                asigDiv.textContent = `${asignatura.nombre} (${asignatura.creditos} créditos)`;
 
-                const id = `${añoData.año}-${asignatura}`;
+                const id = `${añoData.año}-${asignatura.nombre}`;
 
                 if (progreso[id]) {
                     asigDiv.classList.add("completada");
@@ -155,6 +155,7 @@ function renderMalla() {
                     asigDiv.classList.toggle("completada");
                     progreso[id] = asigDiv.classList.contains("completada");
                     localStorage.setItem("progreso", JSON.stringify(progreso));
+                    actualizarProgreso();
                     renderMalla();
                 });
 
@@ -174,16 +175,46 @@ function puedeMarcar(año) {
     const añoAnterior = malla.find(a => a.año === año - 1);
     return añoAnterior.semestres.every(sem =>
         sem.asignaturas.every(asig =>
-            progreso[`${año - 1}-${asig}`]
+            progreso[`${año - 1}-${asig.nombre}`]
         )
     );
+}
+
+function calcularTotalCreditos() {
+    return malla.reduce((total, año) =>
+        total + año.semestres.reduce((sum, sem) =>
+            sum + sem.asignaturas.reduce((s, asig) => s + asig.creditos, 0), 0
+        ), 0
+    );
+}
+
+function calcularCreditosCompletados() {
+    return malla.reduce((total, año) =>
+        total + año.semestres.reduce((sum, sem) =>
+            sum + sem.asignaturas.reduce((s, asig) =>
+                s + (progreso[`${año.año}-${asig.nombre}`] ? asig.creditos : 0), 0
+            ), 0
+        ), 0
+    );
+}
+
+function actualizarProgreso() {
+    const total = calcularTotalCreditos();
+    const completados = calcularCreditosCompletados();
+    const porcentaje = (completados / total) * 100;
+
+    document.getElementById("progreso-texto").textContent =
+        `Progreso: ${completados} / ${total} créditos`;
+
+    document.getElementById("barra").style.width = `${porcentaje}%`;
 }
 
 document.getElementById("resetBtn").addEventListener("click", () => {
     localStorage.clear();
     progreso = {};
+    actualizarProgreso();
     renderMalla();
 });
 
 renderMalla();
-
+actualizarProgreso();
