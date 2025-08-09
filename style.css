@@ -12,10 +12,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 h1 {
     margin: 0;
+    font-size: 1.2rem;
 }
 
 button {
@@ -41,11 +43,25 @@ button:hover {
 
 .año h2 {
     color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.semestres {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
 }
 
 .cuatri {
-    margin-top: 10px;
+    border: 1px solid #ccc;
     padding: 10px;
+    border-radius: 8px;
+}
+
+.cuatri h3 {
+    margin-top: 0;
+    color: #007BFF;
+    font-size: 1rem;
 }
 
 .asignatura {
