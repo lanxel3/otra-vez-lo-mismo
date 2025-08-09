@@ -199,7 +199,7 @@ function calcularCreditosCompletados() {
 }
 
 function actualizarProgreso() {
-    const total = calcularTotalCreditos();
+    const total = 240; // Total fijo de créditos
     const completados = calcularCreditosCompletados();
     const porcentaje = (completados / total) * 100;
 
@@ -219,6 +219,7 @@ function actualizarProgreso() {
         barra.classList.add("amarillo");
     }
 }
+
 
 
 document.getElementById("resetBtn").addEventListener("click", () => {
